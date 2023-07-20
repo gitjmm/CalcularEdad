@@ -13,8 +13,11 @@
  En build.gradle buildFeatures{ dataBinding true }
  8. Layouts:
  a. FrameLayout. Una unica view
+
  b. LinearLayout. Vertical. Se colocan views verticalmente (abajo)
+ 
  Horizontal. Se colocan views horizontalmente (izda a derecha)
+ 
  c. RelativeLayout. Es muy versatil colocando views
- d. ConstraintLayout. Se realiza desde diseño. Similar a Relative.
- Recomendable para pocos views (5 o 10)
+ 
+ d. ConstraintLayout. Se realiza desde diseño. Similar a Relative. Recomendable para pocos views (5 o 10)
