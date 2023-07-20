@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">CalcularEdad</string>
+    <string name="app_name" translatable="false">CalcularEdad</string>
+    <string name="resultado">La edad perruna es %d</string>
+    <string name="dime_edad">Dime edad humana</string>
+    <string name="introduce_edad">Introduce una edad</string>
+    <string name="calcular_edad">Calcular Edad</string>
+    <string name="mi_edad">Mi edad</string>
 </resources>

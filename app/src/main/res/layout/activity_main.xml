@@ -19,7 +19,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp"
-        android:text="Dime tu edad humana"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,7 +30,7 @@
         android:id="@+id/etEdadHumana"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Mi edad"
+        android:hint="@string/mi_edad"
         android:inputType="number"
         android:padding="16dp" />
 
@@ -54,7 +53,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:text="Calcular Edad" />
+        android:text="@string/calcular_edad" />
 
 
 </LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">CalcularEdad</string>
+    <string name="resultado">Your dog age is %d</string>
+    <string name="dime_edad">What is your age?</string>
+    <string name="introduce_edad">Introduce an age</string>
+    <string name="calcular_edad">Calculate age</string>
+    <string name="mi_edad">My age</string>
+
+</resources>
