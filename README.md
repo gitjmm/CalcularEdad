@@ -1,6 +1,7 @@
 # CalcularEdad
  Proyecto Jorge Martínez Mostazo
  App Android que calcula la edad perruna a partir de la humana
+ 
  Elemntos usados en esta app
  1. Crear una app desde inicio en Java
  2. Uso de Views: TextView, EditText, Button, LinearLayout
