@@ -12,6 +12,7 @@
  7. Databinding. Crea componentes en tiempo de compilación.
  En build.gradle buildFeatures{ dataBinding true }
  8. Layouts:
+
  a. FrameLayout. Una unica view
 
  b. LinearLayout. Vertical. Se colocan views verticalmente (abajo)
