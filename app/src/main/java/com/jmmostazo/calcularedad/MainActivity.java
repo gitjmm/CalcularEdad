@@ -5,11 +5,19 @@ package com.jmmostazo.calcularedad;
 * Elemntos usados en esta app
 * 1. Crear una app desde inicio en Java
 * 2. Uso de Views: TextView, EditText, Button, LinearLayout
-* 3. strings.xml Confiuración de string de idiomas
+* 3. strings.xml Configuración de string de idiomas
 * 4. Diseño de views
 * 5. Uso de Logcat
 * 6. Uso y configuración de github
-* 7. Databinding
+* 7. Databinding. Crea componentes en tiempo de compilación.
+* En build.gradle buildFeatures{ dataBinding true }
+* 8. Layouts:
+* a. FrameLayout. Una unica view
+* b. LinearLayout. Vertical. Se colocan views verticalmente (abajo)
+* Horizontal. Se colocan views horizontalmente (izda a derecha)
+* c. RelativeLayout. Es muy versatil colocando views
+* d. ConstraintLayout. Se realiza desde diseño. Similar a Relative.
+* Recomendable para pocos views (5 o 10)
 * */
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -21,20 +29,36 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.jmmostazo.calcularedad.databinding.ActivityMainBinding;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        //Inicio contentview clásico sin binding
+        //setContentView(R.layout.activity_main);
 
-        //Inicio de elementos Views
+        //DataBinding. Formamos el layout
+        ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+
+
+        //Inicio de elementos Views clásicos findViewById
+        /*
         TextView txtEdad = findViewById(R.id.txtEdad);
         EditText edadHumana;
         edadHumana = findViewById(R.id.etEdadHumana);
         TextView edadPerruna = findViewById(R.id.txtEdadPerro);
         Button btnCalcular = findViewById(R.id.btEdad);
+        */
 
+        //Inicio de elementos Views binding
+        TextView txtEdad = binding.txtEdad;
+        EditText edadHumana;
+        edadHumana = binding.etEdadHumana;
+        TextView edadPerruna = binding.txtEdadPerro;
+        Button btnCalcular = binding.btEdad;
 
         //Uso de Log
         Log.d("MainActivity","Actvity creado");
